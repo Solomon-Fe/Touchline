@@ -1,0 +1,92 @@
+TOUCHLINE MANAGEMENT - PHONE, APK AND GOOGLE CLOUD SAVE
+=======================================================
+Developed by Investo Deokii
+
+The phone version and cloud saves need the game to live at a web address of
+your own. GitHub Pages hosts it for free. You only do this once.
+
+---------------------------------------------------------------
+PART 1 - PUT THE GAME ONLINE (GitHub Pages, free, ~10 minutes)
+---------------------------------------------------------------
+1. Go to https://github.com and create a free account (if you don't have one).
+2. Click "+" (top right) > "New repository".
+   - Repository name: touchline
+   - Choose "Public", then "Create repository".
+3. On the new repository page click "uploading an existing file".
+4. Unzip Touchline-Web.zip on your PC. Open the extracted folder, select
+   EVERYTHING inside it (index.html, the css and js folders, icons, sw.js,
+   manifest.webmanifest) and drag it into the GitHub page. Click
+   "Commit changes".
+5. Go to Settings > Pages. Under "Branch" choose "main" and "/ (root)",
+   then Save.
+6. After 1-2 minutes your game is live at:
+       https://YOUR-GITHUB-NAME.github.io/touchline/
+   To update later, upload the new files the same way (replace them).
+
+---------------------------------------------------------------
+PART 2 - INSTALL ON YOUR PHONE (Android)
+---------------------------------------------------------------
+Option A - quickest (no APK):
+1. On the phone, open Chrome and go to your address from Part 1.
+2. Tap the menu (three dots) > "Install app" (or "Add to Home screen").
+3. Touchline Management appears with your other apps. Open it once while
+   online; after that it works offline.
+
+Option B - a real APK file you can share to other phones:
+1. On a PC or phone, go to https://www.pwabuilder.com
+2. Paste your game address from Part 1 and press Start.
+3. Choose "Package for stores" > Android > "Generate package"
+   (you can keep the default options). Download the zip.
+4. Inside the zip is an .apk file. Copy it to your phone (USB cable, Bluetooth,
+   WhatsApp/Telegram to yourself, or Google Drive).
+5. Tap the .apk on the phone. Allow "Install unknown apps" for the app you
+   opened it from when Android asks. Install.
+6. Share the same .apk with any other phone the same way. Each phone starts
+   with its own new careers. Open it once with internet; it then works offline.
+
+iPhone: open your address in Safari > Share > "Add to Home Screen".
+
+---------------------------------------------------------------
+PART 3 - GOOGLE CLOUD SAVE (continue on any device with your Gmail)
+---------------------------------------------------------------
+Your saves go into a private, hidden folder in YOUR OWN Google Drive. Only
+this game can see them. Nobody else gets access.
+
+A) Create a Google "Client ID" (one time, free):
+1. Go to https://console.cloud.google.com and sign in with your Gmail.
+2. Top bar: select a project > "New project". Name it "Touchline". Create.
+3. Menu > "APIs & Services" > "Library". Search "Google Drive API" > Enable.
+4. Menu > "APIs & Services" > "OAuth consent screen" (or "Google Auth
+   Platform"):
+   - User type: External. App name: Touchline Management. Add your email.
+   - Under "Test users" (Audience), add your own Gmail address
+     (and any other Gmail you want to play with).
+5. Menu > "APIs & Services" > "Credentials" > "Create credentials" >
+   "OAuth client ID":
+   - Application type: Web application
+   - Authorised JavaScript origins: https://YOUR-GITHUB-NAME.github.io
+     (no slash at the end, no /touchline)
+   - Create. Copy the "Client ID" (ends with .apps.googleusercontent.com).
+
+B) In the game (opened from your web address or the APK):
+1. Settings > Cloud save > paste the Client ID > Save Client ID.
+2. "Sign in with Google" > choose your Gmail > allow access.
+   (While the app is in "testing", Google shows a warning that it is
+   unverified. That is expected for your own private app. Click
+   "Continue".)
+3. "Upload this career", and tick "Upload automatically every time I save".
+4. On another device: open the game, Settings (or Load career) > Cloud save >
+   sign in with the same Gmail > "Continue here" next to your career.
+
+Note: the copy installed on your PC from the zip runs from a file, and Google
+does not allow sign-in there. To use cloud saves on the PC as well, open your
+web address in Microsoft Edge and choose "Apps > Install this site as an app".
+
+---------------------------------------------------------------
+SAVING
+---------------------------------------------------------------
+- Press Save (top bar, or Ctrl+S on PC) whenever you like. A save is permanent:
+  you cannot go back to an earlier point.
+- The game also saves itself every 2 months of game time (Settings >
+  Autosave: every month, 2 months, 6 months or off).
+- An amber dot on the Save button means there is unsaved progress.
